@@ -1,0 +1,466 @@
+@font-face {
+    font-family: Exo__Bold;
+    src: url('../Fonts/Exo/static/Exo-Bold.ttf');
+}
+
+@font-face {
+    font-family: Exo__Medium;
+    src: url('../Fonts/Exo/static/Exo-Medium.ttf');
+}
+
+@font-face {
+    font-family: Exo__SemiBold;
+    src: url('../Fonts/Exo/static/Exo-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.bg__img img {
+    width: 100%;
+}
+
+.img__section {
+    height: 100vh;
+}
+
+.bg__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text__cotent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.differ__box {
+    margin: 20px 0px 0px 30px;
+}
+
+@media screen and (min-width: 1920px) {
+    .differ__box {
+        margin: 96px 0px 0px 30px;
+    }
+}
+
+.br__bottom {
+    border-bottom: 3.8px solid #7B3800;
+}
+
+.differ__box .color__new {
+    color: #FF0000;
+}
+
+.differ__box h1 {
+    color: #7B3800;
+    font-size: calc(26pt + 0.15vw);
+    font-family: 'Exo__Bold';
+    letter-spacing: 0.03em;
+    line-height: 1.2195;
+}
+
+@media screen and (max-width: 1080px) {
+    .differ__box h1 {
+        font-size: calc(12pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .differ__box h1 {
+        font-size: calc(8pt + 0.15vw);
+        line-height: 1.6195;
+    }
+    .differ__box {
+        margin: 8px 0px 0px 10px;
+    }
+}
+
+.row__media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column__social {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.left__sm__column {
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.right__sm__column {
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.text__sm {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.text__sm h3 {
+    /* text-shadow: 4px 4px 2px #D70006; */
+    color: #FFFFFF;
+    -webkit-text-stroke: 1.5px #000000;
+    -webkit-text-fill-color: #FFFFFF;
+    text-shadow: none;
+    font-size: calc(18pt + 0.15vw);
+    font-family: 'Exo__Bold';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+}
+
+.text__sm span {
+    -webkit-text-fill-color: #ffaa3d;
+}
+
+@media screen and (max-width: 1080px) {
+    .text__sm h3 {
+        font-size: calc(8pt + 0.15vw);
+        -webkit-text-stroke: 1px #000000;
+        text-shadow: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text__sm h3 {
+        font-size: calc(7pt + 0.15vw);
+        -webkit-text-stroke: 0.5px #000000;
+        text-shadow: none;
+    }
+    .text__sm {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.white__text {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.white__text span {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.white__text p {
+    color: #FF0000;
+    font-family: 'Exo__SemiBold';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+    font-size: calc(12pt + 0.15vw);
+}
+
+@media screen and (max-width: 1080px) {
+    .white__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .white__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .white__text {
+        margin: 15px 0px 0px 0px;
+    }
+}
+
+.dn__text {
+    margin: 60px 0px 0px 0px;
+    text-align: center;
+}
+
+.dn__text p {
+    color: #FF8D00;
+    font-size: calc(18pt + 0.15vw);
+    font-family: 'Exo__Bold';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+}
+
+@media screen and (max-width: 1080px) {
+    .dn__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dn__text {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .dn__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .dn__text {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.black___text {
+    text-align: center;
+}
+
+.black___text p {
+    font-size: calc(14pt + 0.15vw);
+    font-family: 'Exo__SemiBold';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+}
+
+@media screen and (max-width: 1080px) {
+    .black___text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .black___text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .black___text p {
+        width: 155%;
+    }
+}
+
+.red__text {
+    text-align: center;
+}
+
+.red__text p {
+    color: #FF0000;
+    font-size: calc(21pt + 0.15vw);
+    font-family: 'Exo__Bold';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+}
+
+@media screen and (max-width: 1080px) {
+    .red__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .red__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+.sign__text {
+    margin: 30px 0px 0px 70px;
+}
+
+.sign__text p {
+    color: #000000;
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Exo__Medium';
+    letter-spacing: 0.03em;
+    line-height: 1.4196;
+}
+
+@media screen and (max-width: 1080px) {
+    .sign__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .sign__text {
+        margin: 10px 0px 0px 70px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sign__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .sign__text {
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .sign__text p {
+        width: 155%;
+    }
+}
+
+.input_1 {
+    max-width: 80%;
+    margin: 0px 0px 0px 70px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #FFF0DD;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 2px dashed #7B3800;
+}
+
+.form-control {
+    background-color: #FFF0DD;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 2px dashed #7B3800;
+}
+
+input[type="text"] {
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Exo__Medium';
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1080px) {
+    input[type="text"] {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .input_1 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    input[type="text"] {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .input_1 {
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    input[type="text"] {
+        width: 159%;
+    }
+}
+
+.btn__button {
+    text-align: center;
+}
+
+.btn__button button {
+    border: none;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 130px;
+    border-radius: 15px;
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Exo__Bold';
+    transition: .3s ease-in-out;
+}
+
+.btn__button:hover button {
+    transform: translateY(-3px);
+    background-color: #FFF0DD;
+    color: black;
+    transition: .3s ease-in-out;
+    border: 1px solid #FF0000;
+}
+
+@media screen and (max-width: 1080px) {
+    .btn__button button {
+        font-size: calc(8pt + 0.15vw);
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn__button button {
+        padding: 10px 20px;
+    }
+    .btn__button {
+        text-align: initial;
+        margin: 0px 0px 0px 70px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .btn__button button {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .btn__button button {
+        width: 140%;
+        margin: 0px 0px 0px 20px;
+    }
+    .btn__button {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000000;
+}
